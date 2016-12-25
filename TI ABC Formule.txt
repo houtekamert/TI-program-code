@@ -1,0 +1,25 @@
+ClrHome
+Disp "ABC Formule"
+Disp "AX²+BX+C"
+Prompt A,B,C
+
+B²-4AC->D
+
+ClrHome
+Disp "ABC Formule"
+Disp "D=",D
+
+If D>0
+Then
+(-B-√D)/(2A)->I
+(-B+√D)/(2A)->J
+Disp "X=",I,J
+
+Else
+If D=0
+Then
+(-B)/(2A)->N
+Disp "X=",N
+
+Else
+Disp "D<0, GEEN OPL."
