@@ -1,0 +1,53 @@
+Disp "Integraal"
+
+Disp "0=OPP 1=Inhoud"
+Prompt Z
+clrHome
+Disp "Integraal"
+Disp "Punten A/B"
+
+If Z=0
+Then
+	Prompt A,B
+	clrHome
+	Disp "Integraal"
+	Disp “0=Enkel 1=Multi”
+	Prompt M
+
+	If M=0
+	Then
+		fnInt(Y1,X,A,B)->I
+		Disp " "
+		Disp "OPP=",I
+	End
+
+	If M=1
+	Then
+		fnInt(abs(Y1-Y2),X,A,B)->J
+		Disp " "
+		Disp "OPP=",J
+	End
+End
+
+If Z=1
+Then
+	Prompt A,B
+	clrHome
+	Disp "Integraal"
+	Disp “0=Enkel 1=Multi”
+	Prompt M
+
+	If M=0
+	Then
+		fnInt(πY12,X,A,B)->I
+		Disp " "
+		Disp "INH=",I
+	End
+	
+	If M=1
+	Then
+		fnInt(πY1²,X,A,B)- fnInt(πY2²,X,A,B)->K
+		Disp " "
+		Disp "INH=",K
+	End
+End
