@@ -1,3 +1,4 @@
+ClrHome
 Disp "Integraal"
 
 Disp "0=OPP 1=Inhoud"
@@ -39,15 +40,15 @@ Then
 
 	If M=0
 	Then
-		fnInt(πY12,X,A,B)->I
+		fnInt(πY1²,X,A,B)->K
 		Disp " "
-		Disp "INH=",I
+		Disp "INH=",K
 	End
 	
 	If M=1
 	Then
-		fnInt(πY1²,X,A,B)- fnInt(πY2²,X,A,B)->K
+		fnInt(πY1²,X,A,B)- fnInt(πY2²,X,A,B)->L
 		Disp " "
-		Disp "INH=",K
+		Disp "INH=",L
 	End
 End
